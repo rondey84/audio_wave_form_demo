@@ -132,13 +132,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_audio_waveforms:
-    dependency: "direct main"
-    description:
-      name: flutter_audio_waveforms
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.2.1+6"
   flutter_lints:
     dependency: "direct dev"
     description:
@@ -289,13 +282,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "4.2.4"
-  rxdart:
-    dependency: "direct main"
-    description:
-      name: rxdart
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "0.27.4"
   sky_engine:
     dependency: transitive
     description: flutter

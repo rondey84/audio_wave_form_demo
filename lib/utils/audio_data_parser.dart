@@ -1,6 +1,16 @@
-// import 'dart:convert';
-
 import 'dart:math' as math;
+
+import 'package:flutter/foundation.dart';
+
+Future<List<double>> parseJsonData(
+    List<int> intSampleData, int totalSamples) async {
+  Map<String, dynamic> audioDataMap = {
+    "rawSamples": intSampleData,
+    "totalSamples": totalSamples,
+  };
+  final samplesData = await compute(loadparseJson, audioDataMap);
+  return samplesData['samples'];
+}
 
 Map<String, dynamic> loadparseJson(Map<String, dynamic> audioDataMap) {
   // final data = jsonDecode(audioDataMap["json"]);
